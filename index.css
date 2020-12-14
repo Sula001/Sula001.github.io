@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input, button {
+    display: block;
+}
+
+input {
+    margin-bottom: 20px;
+}

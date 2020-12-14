@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="index.css">    
+    <title>Document</title>
+
+    <script src="https://widget.cloudpayments.ru/bundles/cloudpayments"></script>
+</head>
+<body>
+    
+    <form onsubmit="pay" class="form">
+        <div>
+            <input class="amount" placeholder="Сумма" type="number" required>
+            <input class="name" placeholder="Имя" type="text" required>
+            <input class="phone" placeholder="Телефон" type="number" required>
+            <input class="email" placeholder="Email" type="email" required>            
+    
+            <button type="submit"> Оплатить </button>
+        </div>
+        
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
