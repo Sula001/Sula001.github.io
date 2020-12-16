@@ -39,15 +39,29 @@ const pay = () => {
                }
            }
        )
-   };
+};
+
+const initBuying = () => {
+    const welcome = document.querySelector('.welcome');
+    const itemToBuy = document.querySelector('.item-to-buy');
+    const buy = document.querySelector('.buy')
+
+    buy.addEventListener('click', () => {
+        welcome.classList.add('d-none');
+        itemToBuy.classList.remove('d-none')
+    })
+
+  
+}
    
 document.addEventListener('DOMContentLoaded', () => {
-	const form = document.querySelector('.form');
+    const form = document.querySelector('.form');
+    initBuying()
 
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 			
-		pay()
+        pay()     
 	})
 })
 
